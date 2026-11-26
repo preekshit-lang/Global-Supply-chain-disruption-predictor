@@ -1,10 +1,10 @@
       package util;
 
 public class consoleformatter {
-    // screen width for centering output
+    // centre output
     public static int boxwidth = 80;
 
-    // adds spaces on the left so text sits in the middle
+    // adds spac left 
     public static String center(String text) {
         int spaces = (boxwidth - text.length()) / 2;
         if (spaces <= 0) {
@@ -17,7 +17,6 @@ public class consoleformatter {
         return leftpad + text;
     }
 
-    // pads a word with spaces on the right so columns line up
     public static String pad(String text, int size) {
         String out = text;
         while (out.length() < size) {
